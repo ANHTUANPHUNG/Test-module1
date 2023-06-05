@@ -32,24 +32,25 @@
                 return this.weight;
             }
             toString() {
-                return this.name.concat(' ', (this.weight));
+                return this.name + " " + this.weight;
             }
         }
         var animal = new Animal('tuấn', '45.5 kg');
         var objAnimal1 = new Animal('Elephant', '45.6kg')
         var objAnimal2 = new Animal('Mouse', '47.6kg')
-        animal.info();
+        // animal.info();
         animal.setWeight('50kg');
         animal.setName('cường');
-        let x = JSON.stringify(animal)
-        let y = JSON.stringify(objAnimal1)
-        let z = JSON.stringify(objAnimal2)
-        console.log(animal);
-        console.log(objAnimal1);
-        console.log(objAnimal2);
-        console.log(x);
-        console.log(y);
-        console.log(z);
+        // let x = JSON.stringify(animal)
+        // let y = JSON.stringify(objAnimal1)
+        // let z = JSON.stringify(objAnimal2)
+        console.log(animal.toString());
+        // console.log(animal);
+        // console.log(objAnimal1);
+        // console.log(objAnimal2);
+        // console.log(x);
+        // console.log(y);
+        // console.log(z);
 
 
 

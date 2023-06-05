@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Animal {
+            constructor(name, weight) {
+                this.name = name;
+                this.weight = weight;
+
+            }
+            info() {
+                console.log(`${this.name} và ${this.weight}`);
+            }
+            setName(name) {
+                this.name = name;
+            }
+            setWeight(weight) {
+                this.weight = weight;
+            }
+            getName() {
+                return this.name;
+            }
+            getWeight() {
+                return this.weight;
+            }
+        }
+        var animal = new Animal('tuấn', '45.5 kg');
+        var objAnimal1 = new Animal('Elephant', '45.6kg')
+        var objAnimal2 = new Animal('Mouse', '47.6kg')
+        animal.info();
+        animal.setWeight('50kg');
+        animal.setName('cường');
+        let x = animal.toString('info');
+        let y = objAnimal1.toString();
+        let z = objAnimal2.toString();
+        console.log(animal);
+        console.log(objAnimal1);
+        console.log(objAnimal2);
+        console.log(x);
+        console.log(y);
+        console.log(z);
+
+
+
+
+    </script>
+</body>
+
+</html>
